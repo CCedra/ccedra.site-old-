@@ -1,0 +1,25 @@
+<template>
+  <div>
+    <Header :h1="HHH"/>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <nav aria-label="breadcrumb" class="mt-4">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="">Главная</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Контакты</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+
+</script>
+
+<style>
+
+</style>
