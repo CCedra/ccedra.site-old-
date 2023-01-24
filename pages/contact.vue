@@ -107,7 +107,6 @@ export default {
       contactFormData.set('email', this.form.email);
       contactFormData.set('subject', this.form.subject);
       contactFormData.set('message', this.form.message);
-      console.log('submitting data...');
       axios({
         method: 'post',
         url: 'http://localhost:8000/api/feedback/',

@@ -15,10 +15,10 @@
 </template>
 
 <script>
-export default {
-  name: "Header",
-  props: ['h1']
-}
+  export default {
+    name: "Header",
+    props: ['h1']
+  }
 </script>
 
 <style scoped>
