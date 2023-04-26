@@ -10,7 +10,7 @@
             <li class="breadcrumb-item active" aria-current="page">Контакты</li>
           </ol>
         </nav>
-        <p class="lead">Ваше письмо отправлено! Спасибо.</p>
+        <p class="lead">Ваш пост успешно создан!</p>
       </div>
     </div>
   </div>

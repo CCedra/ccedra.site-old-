@@ -2,9 +2,9 @@ export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'server',
 
-  // Global page headers (https://go.nuxtjs.dev/config-head)
+// Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'my_nuxtjs_blog',
+    title: 'ccedra_blog',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -67,8 +67,11 @@ auth: {
   }
 },
 axios: {
-  baseURL: 'http://localhost:8000'
+  baseURL: 'http://www.ccedra.site'
 },
   build: {
+    extend(config, ctx) {
+        config.devtool = 'source-map'
+    }
   }
 }

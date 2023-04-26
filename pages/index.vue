@@ -48,16 +48,24 @@
   </div>
 </template>
 
-<script>
-import { mapState } from 'vuex';
-export default {
-  watchQuery: ['page'],
-  computed: {
-    ...mapState(['posts', 'total', 'next', 'next', 'previous', 'current_page'])
-  },
-  async fetch({store, route}) {
-    await store.dispatch('loadAllPosts', {query_page: route.query.page})
-  },
+<script type="module">
+  // Импорты из первого блока
+  import Vue from 'vue';
+  import VueRouter from 'vue-router';
+  import Vuex from 'vuex';
+  import { mapState } from 'vuex';
+  
+  Vue.use(VueRouter);
+  
+  export default {
+    watchQuery: ['page'],
+    computed: {
+      ...mapState(['posts', 'total', 'next', 'next', 'previous']),
+    },
+    async fetch({store, route}) {
+      await store.dispatch('loadAllPosts', {query_page: route.query.page});
+    },
+    title: "Главная страница",
   head() {
     return {
       title: "Главная страница",
@@ -67,7 +75,9 @@ export default {
       ]
     }
   },
+  components: { Vuex },
 }
+
 </script>
 
 <style>
