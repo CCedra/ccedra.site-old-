@@ -1,3 +1,4 @@
+asd
 <template>
   <div class="container">
     <h1 class="my-3">Последние записи блога</h1>
