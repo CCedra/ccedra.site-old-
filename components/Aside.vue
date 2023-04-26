@@ -27,7 +27,7 @@
 </template>
 
 <script>
-export const ssrRender = null;
+export const ssrRender = () => {};
 export default {
   name: "aside.vue",
   props: ['tags','aside'],
