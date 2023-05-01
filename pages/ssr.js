@@ -1,3 +1,8 @@
-import Success from './success.vue'
+// ./ssr.js
+import Success from './pages/success.vue'
+import ErrorPage from './pages/error.vue'
 
-export const ssrRender = Success.ssrRender
+export const ssrRender = {
+  Success: Success.ssrRender,
+  ErrorPage: ErrorPage.ssrRender
+}
