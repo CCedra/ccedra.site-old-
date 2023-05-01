@@ -1,8 +1,11 @@
-// ./ssr.js
-import Success from './pages/success.vue'
-import ErrorPage from './pages/error.vue'
+import Header from '@/components/Header.vue'
+import Success from '@/pages/success.vue'
 
-export const ssrRender = {
-  Success: Success.ssrRender,
-  ErrorPage: ErrorPage.ssrRender
+export default {
+  components: { Header, Success },
+  data() {
+    return {
+      title: 'My SSR page'
+    }
+  }
 }
