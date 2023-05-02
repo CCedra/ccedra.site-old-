@@ -49,7 +49,7 @@
 </template>
 
 <script type="module">
-  // Импорты из первого блока
+/*
   import Vue from 'vue';
   import VueRouter from 'vue-router';
   import Vuex from 'vuex';
@@ -76,6 +76,34 @@
     }
   },
   components: { Vuex },
+}  */
+
+import axios from "axios";
+export default {
+  watchQuery: ['page'],
+  data() {
+    return {
+      posts: [],
+      total: [],
+      next: [],
+      previous: [],
+      current_page: 0
+    }
+  },
+  async asyncData({route}) {
+    let page = route.query.page !== undefined ? `?page=${route.query.page}` : '';
+    const { data } = await axios.get(`https://spa--blog.herokuapp.com/api/posts/${page}`);
+    let next = data.next != null ? data.next.split('/')[5] : data.next;
+    let previous = data.previous != null ? data.previous.split('/')[5] : data.previous;
+    let current_page = route.query.page
+    return {
+      posts: data.results,
+      total: Math.ceil(data.count / 6),
+      next: next,
+      previous: previous,
+      current_page: Number(current_page)
+    }
+  },
 }
 
 </script>
