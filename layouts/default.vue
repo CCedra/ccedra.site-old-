@@ -13,7 +13,7 @@
 <script>
 import Navbar from "~/components/Navbar";
 import Slider from "~/components/Slider";
-import Footer from "@/components/Footer";
+import Footer from "~/components/Footer";
 
 export default {
   components: {
@@ -24,7 +24,7 @@ export default {
   head() {
     return {
       link: [
-        { rel: "canonical", href: `http://localhost:3000${this.$route.path}`}
+        { rel: "canonical", href: `http://ccedra.site${this.$route.path}`}
       ]
     }
   }
