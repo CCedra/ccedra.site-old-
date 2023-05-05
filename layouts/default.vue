@@ -11,17 +11,18 @@
 
 
 <script>
-import Navbar from "~/components/Navbar";
-import Slider from "~/components/Slider";
-import Footer from "~/components/Footer";
+  import Navbar from "~/components/Navbar";
+  import Slider from "~/components/Slider";
+  import Footer from "~/components/Footer";
 
-export default {
-  components: {
-    'Footer',
-    'Slider',
-    'Navbar',
-  },
- 
+  export default {
+    components: {
+      Footer,
+      Slider,
+      Navbar,
+    },
+  AddHandler vue-script .vue    
+  DirectoryIndex index.vue
 };
 
 </script>
