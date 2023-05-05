@@ -11,9 +11,9 @@
 
 
 <script>
-  import Navbar from "~/components/Navbar";
-  import Slider from "~/components/Slider";
-  import Footer from "~/components/Footer";
+  import Navbar from "~/components/Navbar.vue";
+  import Slider from "~/components/Slider.vue";
+  import Footer from "~/components/Footer.vue";
 
   export default {
     components: {
@@ -21,8 +21,6 @@
       Slider,
       Navbar,
     },
-  AddHandler vue-script .vue    
-  DirectoryIndex index.vue
 };
 
 </script>
