@@ -17,9 +17,9 @@ import Footer from "~/components/Footer";
 
 export default {
   components: {
-    Footer,
-    Slider,
-    Navbar,
+    'Footer',
+    'Slider',
+    'Navbar',
   },
   head() {
     return {
