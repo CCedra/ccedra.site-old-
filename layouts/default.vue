@@ -3,7 +3,7 @@
     <Navbar />
     <Slider />
     <div class="container">
-      <Nuxt />
+     <Nuxt />
     </div>
     <Footer />
   </div>
@@ -21,13 +21,7 @@ export default {
     'Slider',
     'Navbar',
   },
-  head() {
-    return {
-      link: [
-        { rel: "canonical", href: `http://ccedra.site${this.$route.path}`}
-      ]
-    }
-  }
+ 
 };
 
 </script>
