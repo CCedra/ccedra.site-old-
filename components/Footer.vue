@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="container">
       <p class="float-right">
-        <a href="#">Наверх</a>https://github.com/CCedra/ccedra.site/blob/master/components/Footer.vue
+        <a href="#">Наверх</a>
       </p>
       <span class="text-muted">Подвальчек.</span>
     </div>
