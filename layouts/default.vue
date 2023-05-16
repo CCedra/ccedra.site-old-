@@ -5,7 +5,7 @@
     <div class="container">
      <Nuxt />
     </div>
-    <Footer />
+    <!-- <Footer /> -->
   </div>
 </template>
 
@@ -13,11 +13,11 @@
 <script>
   import Navbar from "~/components/Navbar.vue";
   import Slider from "~/components/Slider.vue";
-  import Footer from "~/components/Footer.vue";
+  //import Footer from "~/components/Footer.vue";
 
   export default {
     components: {
-      Footer,
+      //Footer,
       Slider,
       Navbar,
     },
