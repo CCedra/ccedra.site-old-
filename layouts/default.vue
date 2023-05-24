@@ -3,9 +3,9 @@
     <Navbar />
     <Slider />
     <div class="container">
-     <Nuxt />
+    <Nuxt />
     </div>
-    <!-- <Footer /> -->
+    <Footer />
   </div>
 </template>
 
@@ -17,7 +17,7 @@
 
   export default {
     components: {
-      //Footer,
+      Footer,
       Slider,
       Navbar,
     },
