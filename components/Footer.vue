@@ -4,7 +4,7 @@
       <p class="float-right">
         <a href="#">Наверх</a>
       </p>
-      <span class="text-muted">Подвальчек.</span>
+      <span class="text-muted">Подвальчег.</span>
     </div>
   </footer>
 </template>
